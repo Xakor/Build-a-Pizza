@@ -128,6 +128,13 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\BurgerIcons\cart_small.png" />
+    <Content Include="Assets\BurgerIcons\cheese_small.png" />
+    <Content Include="Assets\BurgerIcons\crust_small.png" />
+    <Content Include="Assets\BurgerIcons\meat_small.png" />
+    <Content Include="Assets\BurgerIcons\Money_small.png" />
+    <Content Include="Assets\BurgerIcons\sauce_small.png" />
+    <Content Include="Assets\BurgerIcons\tomato_small.png" />
     <Content Include="Help.htm" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

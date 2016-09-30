@@ -10,24 +10,66 @@
       xmlns:views="using:Build_a_Pizza.Views"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       mc:Ignorable="d">
+    
+    <Page.Resources>
+        <Geometry x:Key="IconCart">M24.998001,26.000008C23.895001,26.000008 22.998001,26.897008 22.998001,28.000008 22.998001,29.103008 23.895001,30.000008 24.998001,30.000008 26.101002,30.000008 26.998001,29.103008 26.998001,28.000008 26.998001,26.897008 26.101002,26.000008 24.998001,26.000008z M13.998001,26.000008C12.895004,26.000008 11.998001,26.897011 11.998002,28.000008 11.998001,29.103004 12.895004,30.000008 13.998001,30.000008 15.100998,30.000008 15.998001,29.103004 15.998001,28.000008 15.998001,26.897011 15.100998,26.000008 13.998001,26.000008z M24.998001,24.000008C27.204,24.000008 28.998001,25.794008 28.998001,28.000008 28.998001,30.206007 27.204,32.000008 24.998001,32.000008 22.792001,32.000008 20.998001,30.206007 20.998001,28.000008 20.998001,25.794008 22.792001,24.000008 24.998001,24.000008z M13.998001,24.000008C16.204002,24.000008 17.998001,25.794014 17.998001,28.000008 17.998001,30.206001 16.204002,32.000008 13.998001,32.000008 11.792,32.000008 9.9980011,30.206001 9.9980011,28.000008 9.9980011,25.794014 11.792,24.000008 13.998001,24.000008z M29.965622,6.9920082L6.8818386,6.999712 9.5831679,17.000008 26.873669,17.000008 29.990622,7.1260071C30.014622,7.0500069,29.974623,6.9980068,29.965622,6.9920082z M1,0L3.4629998,0C4.4029999,0,5.2259998,0.66800117,5.4200001,1.5880013L6.3416681,5.0000076 29.994621,5.0000076C30.625612,5.0000076 31.206604,5.2990074 31.588598,5.8200073 31.987593,6.3660069 32.102591,7.0800076 31.896593,7.7310085L28.77564,17.571008C28.504644,18.426008,27.740656,19.000008,26.873669,19.000008L10.123418,19.000008 10.648,20.942006 29.406002,20.997006C29.958002,20.997006 30.406002,21.445006 30.406002,21.997007 30.406002,22.549007 29.958002,22.997007 29.406002,22.997007L10.661,22.997007C9.7200003,22.997007,8.8980002,22.329007,8.7040001,21.408006L3.4759998,2.0550022 1,2.0000019C0.44799995,2.0000019 0,1.552002 0,1.0000019 0,0.44800186 0.44799995,0 1,0z</Geometry>
+    </Page.Resources>
 
-    <Controls:HamburgerMenu x:Name="MyHamburgerMenu">
+    <Controls:HamburgerMenu x:Name="MyHamburgerMenu" HamburgerBackground="#d23636" NavAreaBackground="#d23636">
 
         <Controls:HamburgerMenu.PrimaryButtons>
             <!--  mainpage button  -->
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:MainPage" 
-                                          AutomationProperties.Name="Jerry"
-                                          >
-                <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Home" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
-                               Text="Home" />
+            <Controls:HamburgerButtonInfo PageType="views:MainPage" ClearHistory="True">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Width="48" Height="48" Source="../Assets/BurgerIcons/crust_small.png" Stretch="Uniform"  />
+                    <TextBlock Text="Crust" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Width="48" Height="48" Source="../Assets/BurgerIcons/sauce_small.png" Stretch="Uniform"  />
+                    <TextBlock Text="Sauce" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Width="48" Height="48" Source="../Assets/BurgerIcons/meat_small.png" Stretch="Uniform"  />
+                    <TextBlock Text="Meat" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Width="48" Height="48" Source="../Assets/BurgerIcons/tomato_small.png" Stretch="Uniform"  />
+                    <TextBlock Text="Vegetables" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Width="48" Height="48" Source="../Assets/BurgerIcons/cheese_small.png" Stretch="Uniform"  />
+                    <TextBlock Text="Cheese" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
         </Controls:HamburgerMenu.PrimaryButtons>
+        
+        
 
         <Controls:HamburgerMenu.SecondaryButtons>
+            <Controls:HamburgerButtonInfo PageType="views:DetailPage" IsEnabled="false">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Border Width="48" Height="48">
+                        <Border BorderThickness="1" BorderBrush="White" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                            <TextBlock Text="108" IsColorFontEnabled="True"  TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14" Margin="3,1" />
+                        </Border>
+                    </Border>
+                    <TextBlock Text="Total Price:" Margin="12, 0, 0, 0" VerticalAlignment="Center" Foreground="White" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
             <!--  settingspage button  -->
             <Controls:HamburgerButtonInfo x:Name="SettingsButton" PageParameter="0"
                                           PageType="views:SettingsPage">
@@ -35,10 +77,9 @@
                     <SuppressNavigationTransitionInfo />
                 </Controls:HamburgerButtonInfo.NavigationTransitionInfo>
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
-                                Symbol="Setting" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
-                               Text="Settings" />
+                    <Image Width="48" Height="48" Source="../Assets/BurgerIcons/cart_small.png" Stretch="Uniform"  />
+                    <!--<SymbolIcon Symbol="AllApps"  Width="48" Height="48"  />-->
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center" Text="Checkout" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
         </Controls:HamburgerMenu.SecondaryButtons>

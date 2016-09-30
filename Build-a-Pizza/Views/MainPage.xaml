@@ -50,7 +50,7 @@
 
         <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
-                             RelativePanel.AlignTopWithPanel="True" Text="Main Page">
+                             RelativePanel.AlignTopWithPanel="True" Text="Main Page" Background="#FFCFCFCF">
 
             <!--  secondary commands  -->
             <controls:PageHeader.SecondaryCommands>
@@ -93,6 +93,7 @@
                    RelativePanel.Below="parameterResizer"
                    Text="Current Visual State" />
 
+        <Path Data="" Fill="White" Stretch="Uniform"></Path>
     </RelativePanel>
 </Page>
 
