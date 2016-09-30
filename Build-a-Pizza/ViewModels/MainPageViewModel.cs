@@ -5,11 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Template10.Services.NavigationService;
 using Windows.UI.Xaml.Navigation;
+using Build_a_Pizza.Models;
 
 namespace Build_a_Pizza.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
+        #region Magic
         public MainPageViewModel()
         {
             if (Windows.ApplicationModel.DesignMode.DesignModeEnabled)
@@ -56,7 +58,21 @@ namespace Build_a_Pizza.ViewModels
 
         public void GotoAbout() =>
             NavigationService.Navigate(typeof(Views.SettingsPage), 2);
+        #endregion
 
+        //instance of the Catalog
+        public PizzaCatalogSingleton PizzaCatalogSingleton { get; set; }
+
+        // connects to the selected event in the list view
+        private static int _selectedPizza; 
+        public static int SelectedPizza
+        {
+            get { return _selectedPizza; }
+            set { _selectedPizza = value; }
+        }
     }
+
+
+
 }
 

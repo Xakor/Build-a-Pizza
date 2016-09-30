@@ -97,7 +97,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cheese.cs" />
+    <Compile Include="Models\Crust.cs" />
+    <Compile Include="Models\Meat.cs" />
+    <Compile Include="Models\PizzaCatalogSingleton.cs" />
     <Compile Include="Models\PizzaModel.cs" />
+    <Compile Include="Models\Sauce.cs" />
+    <Compile Include="Models\Veggies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
