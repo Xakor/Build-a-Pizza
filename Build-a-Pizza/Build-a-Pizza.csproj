@@ -106,11 +106,29 @@
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CheesePage.xaml.cs">
+      <DependentUpon>CheesePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CrustPage.xaml.cs">
+      <DependentUpon>CrustPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ExtrasPage.xaml.cs">
+      <DependentUpon>ExtrasPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GreenPage.xaml.cs">
+      <DependentUpon>GreenPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MeatPage.xaml.cs">
+      <DependentUpon>MeatPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SaucePage.xaml.cs">
+      <DependentUpon>SaucePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -135,6 +153,9 @@
     <Content Include="Assets\BurgerIcons\Money_small.png" />
     <Content Include="Assets\BurgerIcons\sauce_small.png" />
     <Content Include="Assets\BurgerIcons\tomato_small.png" />
+    <Content Include="Assets\Logo\BaP-Logo_big.png" />
+    <Content Include="Assets\Logo\BaP-Logo_med.png" />
+    <Content Include="Assets\Logo\BaP-Logo_sml.png" />
     <Content Include="Help.htm" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -161,13 +182,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\CheesePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CrustPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\DetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ExtrasPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GreenPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MeatPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SaucePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SettingsPage.xaml">
       <SubType>Designer</SubType>

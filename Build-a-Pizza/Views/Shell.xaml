@@ -19,35 +19,35 @@
 
         <Controls:HamburgerMenu.PrimaryButtons>
             <!--  mainpage button  -->
-            <Controls:HamburgerButtonInfo PageType="views:MainPage" ClearHistory="True">
+            <Controls:HamburgerButtonInfo PageType="views:CrustPage" ClearHistory="True">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Image Width="48" Height="48" Source="../Assets/BurgerIcons/crust_small.png" Stretch="Uniform"  />
                     <TextBlock Text="Crust" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+            <Controls:HamburgerButtonInfo PageType="views:SaucePage" >
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Image Width="48" Height="48" Source="../Assets/BurgerIcons/sauce_small.png" Stretch="Uniform"  />
                     <TextBlock Text="Sauce" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+            <Controls:HamburgerButtonInfo PageType="views:MeatPage" >
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Image Width="48" Height="48" Source="../Assets/BurgerIcons/meat_small.png" Stretch="Uniform"  />
                     <TextBlock Text="Meat" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+            <Controls:HamburgerButtonInfo PageType="views:GreenPage" >
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Image Width="48" Height="48" Source="../Assets/BurgerIcons/tomato_small.png" Stretch="Uniform"  />
                     <TextBlock Text="Vegetables" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <Controls:HamburgerButtonInfo PageType="views:DetailPage" >
+            <Controls:HamburgerButtonInfo PageType="views:CheesePage" >
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <Image Width="48" Height="48" Source="../Assets/BurgerIcons/cheese_small.png" Stretch="Uniform"  />
                     <TextBlock Text="Cheese" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
@@ -71,8 +71,7 @@
             </Controls:HamburgerButtonInfo>
 
             <!--  settingspage button  -->
-            <Controls:HamburgerButtonInfo x:Name="SettingsButton" PageParameter="0"
-                                          PageType="views:SettingsPage">
+            <Controls:HamburgerButtonInfo x:Name="SettingsButton" PageParameter="0" PageType="views:MainPage">
                 <Controls:HamburgerButtonInfo.NavigationTransitionInfo>
                     <SuppressNavigationTransitionInfo />
                 </Controls:HamburgerButtonInfo.NavigationTransitionInfo>
